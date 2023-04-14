@@ -5,6 +5,6 @@ int main()
     scanf("%d",&n);
     for (int i =1 ; i<=n;i++)
     {
-        printf(" I Love Assginment\n");
+        printf(" I Love Assignment\n");
     }
 }
