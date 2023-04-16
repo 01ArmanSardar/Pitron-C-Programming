@@ -2,22 +2,20 @@
 int main()
 {
     int n,a;
-    int Jsum=0,Vsum=0;
+    int jsum=0,vsum=0;
     scanf("%d",&n);
     for (int i=1; i<=n; i++)
     {
         scanf("%d",&a);
-        if (i%2==0)
+        if (a%2==0)
         {
-            Jsum = Jsum+i;
+            jsum=jsum+a;
         }
-        else
-        {
-
-            Vsum =Vsum +i;
-        }
+           else
+           {
+             vsum=vsum+a;
+             }
     }
-    printf("%d ",Jsum);
-    printf("%d ",Vsum);
-
+    printf("%d ",jsum);
+     printf("%d ",vsum);
 }
