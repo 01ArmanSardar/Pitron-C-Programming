@@ -10,7 +10,7 @@ int main ()
     }
     int pos, val;
     scanf("%d %d",&pos,&val);
-    for (int i=n; i>=pos; i--)
+    for (int i=n; i>=pos+1; i--)
     {
         ar[i]=ar[i-1];
     }
