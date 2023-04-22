@@ -9,6 +9,7 @@ int main()
     {
         scanf("%d",&ar[i]);
     }
+
     int m;
     scanf("%d",&m);
     int br[m];
