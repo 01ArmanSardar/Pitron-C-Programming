@@ -1,9 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 int main ()
 {
-    int ar [8]="orange";
-    int br [8];
+    char ar [8];
+    char br [8];
+    scanf("%s %s",&ar,&br);
     int i;
-    br[i]=ar[i];
-    printf("%d",br[i]);
+    for (i=0;i<=strlen(br);i++)
+    {
+        ar[i]=br[i];
+    }
+    printf("%s %s",ar,br);
 }
