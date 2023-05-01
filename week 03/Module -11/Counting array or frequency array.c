@@ -14,7 +14,7 @@ int main()
         int val =a[i];
         cnt[val]++;
     }
-    for (int i=0; i<=6; i++)
+    for (int i=0; i<=`6; i++)
     {
         printf("%d - %d\n",i,cnt[i]);
     }
