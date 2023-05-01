@@ -3,7 +3,7 @@
 int main()
 {
     char a[100],b[100];
-scanf("%s %s",&a,&b);
+scanf("%s %s",&a,&b);a
     int value=strcmp(a,b);
     if (value<0)
     {
