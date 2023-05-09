@@ -4,11 +4,11 @@
 #include <stdlib.h>
 int main()
 {
-    char  stri[50] = "abefjimotulodi";
-    // scanf("%s",&stri);
-   // char a,e,i,o,u;
-    int vowel=0;
-    for (int b=1; b<=strlen(stri);b++)
+    char  stri[1001];
+    scanf("%s",stri);
+    int vowel=0,b;
+   // for ( b=0;stri[b] != '\0';b++)
+    for (b=0;b<=strlen(stri);b++)
     {
         if (stri[b]== 'a' || stri[b]== 'e' || stri[b]== 'i' || stri[b]== 'o' || stri[b]== 'u' )
         {
