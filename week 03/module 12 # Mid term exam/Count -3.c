@@ -6,11 +6,11 @@ int main()
     int cnt [26]={0};
     for (int i=0;i<strlen(s);i++)
     {
-        int value=s[i]-97;
+        int value=s[i]-'a';
         cnt [value]++;
     }
     for (int i=0;i<26;i++)
     {
-        printf("%c  - %d\n",i+97,cnt[i]);
+        printf("%c  - %d\n",i+'a',cnt[i]);
     }
 }
