@@ -2,9 +2,9 @@
 int main()
 {
     int n;
+     scanf("%d",&n);
     int sp=n-1;
     int st=1;
-    scanf("%d",&n);
     for (int i=1;i<=n;i++)
     {
       for (int cl=1;cl<=sp;cl++)
