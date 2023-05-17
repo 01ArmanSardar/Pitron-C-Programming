@@ -15,4 +15,5 @@ int main()
         scanf("%d",&ar[i]);
     }
     fun (ar,n,0);
+    printf("thank you");
 }
