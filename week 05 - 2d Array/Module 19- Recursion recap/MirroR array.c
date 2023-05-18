@@ -15,7 +15,7 @@ int main()
     {
         for (int j=col-1;j>=0;j--)
         {
-            printf("%d",ar[i][j]);
+            printf("%d ",ar[i][j]);
         }
         printf("\n");
     }
