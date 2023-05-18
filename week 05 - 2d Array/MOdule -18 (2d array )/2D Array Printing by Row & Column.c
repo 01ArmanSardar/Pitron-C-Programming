@@ -11,19 +11,21 @@ int main()
 scanf("%d",&ar[i][j]);
         }
     }
-    //exact column
+    //exact column find
   /*  int e;
     scanf("%d",&e);
     for (int i=0;i<row;i++)
     {
         printf("%d ",ar[i][e]);
     }*/
-    int e;
+    //exat row find
+
+   /* int e;
     scanf("%d",&e);
     for (int i=0;i<col;i++)
     {
         printf("%d ",ar[e][i]);
-    }
+    } */
 
 
 }
