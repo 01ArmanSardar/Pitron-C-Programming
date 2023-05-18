@@ -23,9 +23,12 @@ int main()
         {
             if (i==j)
             {
-                continue;;
+                if (ar[i][j] != ar[0][0])
+                {
+                    flag =0;
+                }
             }
-            if (ar[i][j] != 0)
+       else     if (ar[i][j] != 0)
             {
                 flag=0;
             }
@@ -33,10 +36,11 @@ int main()
     }
       if (flag==1)
         {
-            printf("primary daigonal\n");
+            printf("scaller matrix\n");
         }
         else
         {
-            printf("not daigonal\n");
+            printf("not sccaller matrix\n");
         }
 }
+
