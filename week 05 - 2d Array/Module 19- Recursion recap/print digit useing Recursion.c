@@ -1,3 +1,4 @@
+//wrong teset in 5 at codeforces
 #include<stdio.h>
 void fun (int n)
 {
@@ -15,6 +16,10 @@ int main()
         int n;
         scanf("%d",&n);
         fun(n);
+        if (n==0)
+        {
+            printf("0");
+        }
         printf("\n");
     }
     return 0;
