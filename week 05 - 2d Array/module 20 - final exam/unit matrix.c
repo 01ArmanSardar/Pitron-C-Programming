@@ -1,49 +1,46 @@
-#include<stdio.h>
+//this is primary diagonal.
+#include <stdio.h>
 int main()
 {
-   // int n;
-    //scanf("%d",&n);
-    int a[10][10];
-    int i,j,row,col;
-    scanf("%d %d",&row,&col);
-    int flag=0;
-    for (i=0; i<row; i++)
+    int row,col;
+    scanf("%d %d ",&row,&col);
+    int ar[row][col];
+    for (int i=0; i<row; i++)
     {
-        for (j=0; j<col; j++)
+        for (int j=0; j<col; j++)
         {
-            scanf("%d", &a[i][j]);
+            scanf("%d",&ar[i][j]);
         }
     }
-    //int flag=0;
-
-    for (i=0; i<row; i++)
+    int flag =1;
+    if (row != col)
     {
-        for (j=0; j<col; j++)
+        flag=0;
+    }
+    for (int i=0; i<row; i++)
+    {
+        for (int j=0; j<col; j++)
         {
-            if (i==j && a[i][j] !=1)
+            if (i==j)
             {
-                flag=-1;
-                break;
+                if (ar[i][j] != 1)
+                {
+                    flag =0;
+                }
             }
-            else if(i != j && a[i][j] !=0)
+       else     if (ar[i][j] != 0)
             {
-                flag=-1;
-                break;
+                flag=0;
             }
         }
     }
-    if (flag ==0)
-    {
-        printf("YES");
-    }
-    else
-    {
-        printf("NO");
-    }
+      if (flag==1)
+        {
+            printf("YES\n");
+        }
+        else
+        {
+            printf(" NO\n");
+        }
 }
-/*5
-1 0 0 0 0
-0 1 0 0 0
-0 0 1 0 1
-0 0 0 1 0
-0 0 0 0 1*/
+
